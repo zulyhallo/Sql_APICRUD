@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Sql_APICRUD.Models;
 
-namespace Sql_APICRUD.Controllers
+namespace Sql_APICRUD.Controllers //Methods eklemek,silmek vs
 {
     [Route("api/[controller]")]
     [ApiController]
