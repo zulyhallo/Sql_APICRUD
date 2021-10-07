@@ -32,7 +32,7 @@ namespace Sql_APICRUD.Controllers
         DataTable table = new DataTable();
         string sqlDataSource = _configuration.GetConnectionString("TravellerAppCon");
         SqlDataReader myReader;
-        using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
         {
             myCon.Open();
             using (SqlCommand myCommand = new SqlCommand(query, myCon))
